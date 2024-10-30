@@ -1,0 +1,33 @@
+{
+  "name": "monorepo-study",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "common-components": "pnpm -F @common/components",
+    "prototype-a": "pnpm -F prototype-a",
+    "prototype-b": "pnpm -F prototype-b",
+    "dev": "pnpm -r dev",
+    "lint": "eslint .",
+    "format": "prettier --write",
+    "postinstall": "husky",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.15.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.12.2"
+  }
+}
